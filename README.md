@@ -55,6 +55,7 @@ Estas son algunas de las tecnologías y herramientas con las que trabajo diariam
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   <img src="https://img.shields.io/badge/CLI-4D4D4D?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="CLI"/>
+  <br>
   <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++"/>
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
@@ -67,7 +68,7 @@ Estas son algunas de las tecnologías y herramientas con las que trabajo diariam
   <img src="https://img.shields.io/badge/Krita-203759?style=for-the-badge&logo=krita&logoColor=white" alt="Krita"/>
   <img src="https://img.shields.io/badge/Inkscape-000000?style=for-the-badge&logo=inkscape&logoColor=white" alt="Inkscape"/>
   <img src="https://img.shields.io/badge/CorelDRAW-009642?style=for-the-badge" alt="CorelDRAW"/>
-  <br>
+  
 </p>
 
 ---
