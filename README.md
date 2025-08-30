@@ -75,22 +75,20 @@ Estas son algunas de las tecnologías y herramientas con las que trabajo diariam
 
 ## 🚀 Mis Proyectos Principales
 
----
-
 ### 📊 Contabilito
 <!-- Reemplaza esta imagen con una captura de tu app -->
 <img src="https://raw.githubusercontent.com/gist/DionelValera/f9499638b73f9352c64f73c5a4aad7a1/raw/contabilito_placeholder.png" width="500">
 <p>
   Una aplicación para la gestión contable básica, enfocada en la simplicidad y la eficiencia. Desarrollada para aplicar conceptos de desarrollo frontend y backend ligero.
 </p>
+
+
 <p>
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
   <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite"/>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
 </p>
 <a href="https://github.com/DionelValera/contabilito">Ver Repositorio →</a>
-
----
 
 ### 🐧 Onix Hyprdots
 <!-- Reemplaza esta imagen con una captura de tu escritorio -->
@@ -142,8 +140,6 @@ Estoy siempre abierto a nuevas oportunidades, colaboraciones o simplemente a una
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
 </p>
-
----
 
 Gracias por visitar mi rincón en GitHub. ¡Espero que disfrutes explorando mi trabajo!
 
