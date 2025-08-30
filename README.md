@@ -3,14 +3,14 @@
 ¡Hola! 🎆 Soy Dionel, un apasionado desarrollador de software y creativo digital. Este repositorio contiene el código de mi portafolio personal, un espacio donde no solo muestro mis proyectos, sino también un reflejo de mi dedicación por construir experiencias de usuario limpias, eficientes y atractivas.
 
 <div align="center">
-  <a href="google.com">
+  <a href="[ENLACE_A_TU_PORTAFOLIO_EN_VIVO]">
     <!-- Puedes reemplazar esta imagen con una captura de tu portafolio -->
     <img src="https://raw.githubusercontent.com/gist/DionelValera/f9499638b73f9352c64f73c5a4aad7a1/raw/portfolio_placeholder.png" alt="Banner del Portafolio" width="800"/>
   </a>
 </div>
 
 <div align="center" style="margin-top: 1rem;">
-  <a href="[ENLACE_A_TU_CV_EN_PDF]" target="_blank">
+  <a href="https://drive.google.com/file/d/1OB0hN-q_O82Q5yL9e3cyxuf2CytU22Bq/view?usp=drive_link" target="_blank">
     <!-- Sube tu CV a Google Drive, Dropbox o tu propio sitio y pega el enlace aquí -->
     <img src="https://img.shields.io/badge/Descargar_CV-2E8B57?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Descargar CV"/>
   </a>
