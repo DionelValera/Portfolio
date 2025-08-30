@@ -5,7 +5,7 @@
 <div align="center">
   <a href="[ENLACE_A_TU_PORTAFOLIO_EN_VIVO]">
     <!-- Puedes reemplazar esta imagen con una captura de tu portafolio -->
-    <img src="https://raw.githubusercontent.com/gist/diojvi/f9499638b73f9352c64f73c5a4aad7a1/raw/portfolio_placeholder.png" alt="Banner del Portafolio" width="800"/>
+    <img src="https://raw.githubusercontent.com/gist/DionelValera/f9499638b73f9352c64f73c5a4aad7a1/raw/portfolio_placeholder.png" alt="Banner del Portafolio" width="800"/>
   </a>
 </div>
 
@@ -78,7 +78,7 @@ Estas son algunas de las tecnologías y herramientas con las que trabajo diariam
 
 ### 📊 Contabilito
 <!-- Reemplaza esta imagen con una captura de tu app -->
-<img src="https://raw.githubusercontent.com/gist/diojvi/f9499638b73f9352c64f73c5a4aad7a1/raw/contabilito_placeholder.png" width="500">
+<img src="https://raw.githubusercontent.com/gist/DionelValera/f9499638b73f9352c64f73c5a4aad7a1/raw/contabilito_placeholder.png" width="500">
 <p>
   Una aplicación para la gestión contable básica, enfocada en la simplicidad y la eficiencia. Desarrollada para aplicar conceptos de desarrollo frontend y backend ligero.
 </p>
@@ -87,13 +87,13 @@ Estas son algunas de las tecnologías y herramientas con las que trabajo diariam
   <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite"/>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
 </p>
-<a href="https://github.com/diojvi/contabilito">Ver Repositorio →</a>
+<a href="https://github.com/DionelValera/contabilito">Ver Repositorio →</a>
 
 ---
 
 ### 🐧 Onix Hyprdots
 <!-- Reemplaza esta imagen con una captura de tu escritorio -->
-<img src="https://raw.githubusercontent.com/gist/diojvi/f9499638b73f9352c64f73c5a4aad7a1/raw/onix_placeholder.png" width="500">
+<img src="https://raw.githubusercontent.com/gist/DionelValera/f9499638b73f9352c64f73c5a4aad7a1/raw/onix_placeholder.png" width="500">
 <p>
   Mi visión personal de un entorno de escritorio perfecto con Hyprland. Un conjunto de <i>dotfiles</i> y scripts que buscan ofrecer una experiencia de usuario cohesiva, moderna y altamente adaptable en Arch Linux y otros sistemas Unix.
 </p>
@@ -102,7 +102,7 @@ Estas son algunas de las tecnologías y herramientas con las que trabajo diariam
   <img src="https://img.shields.io/badge/Hyprland-00ADD8?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTEzMS4xMyAxMjEuODdsLTMuMTQtMy4xM2wtNDQuOTUgNDQuOTVsMy4xMyAzLjE0YTguNDIgOC40MiAwIDAgMCAxMS45MiAwbDQxLjg2LTQxLjg2YTguNDIgOC40MiAwIDAgMCAwLTExLjkyWm05MS4xOS0zOC4xMWwtNDQuOTYtNDQuOTVhOC40MiA44LjQyIDAgMCAwLTExLjkyIDBMMTYuMjEgMTU4YTguNDIgOC40MiAwIDAgMCAwIDExLjkybDQ0Ljk1IDQ0Ljk2YTguNDIgOC40MiAwIDAgMCAxMS45MiAwbDExOS4xNy0xMTkuMTdhOC40MiA4LjQyIDAgMCAwIDAtMTEuOTJabS0xOC4yNiA1Ljc2TDEzOC4xNCAxNTUuNDRsLTMuMTQtMy4xM2w2NS45Mi02NS45MmwzLjEzIDMuMTRhMi44MiAyLjgyIDAgMCAxIDAgMy45N1ptLTc2LjM0IDc2LjM0bC0zLjEzLTMuMTNsNjUuOTItNjUuOTJsMy4xMyAzLjE0YTIuODIgMi44MiAwIDAgMSAwIDMuOTdaIi8+PC9zdmc+" alt="Hyprland"/>
   <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Shell Script"/>
 </p>
-<a href="https://github.com/diojvi/Onix-hyprdots">Ver Repositorio →</a>
+<a href="https://github.com/DionelValera/Onix-hyprdots">Ver Repositorio →</a>
 
 ---
 
@@ -131,7 +131,7 @@ Mi pasión por la tecnología no se detiene en el código. Disfruto personalizan
 Estoy siempre abierto a nuevas oportunidades, colaboraciones o simplemente a una buena charla sobre tecnología. ¡No dudes en contactarme!
 
 <p align="left">
-  <a href="https://github.com/diojvi" target="_blank">
+  <a href="https://github.com/DionelValera" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
   <a href="[ENLACE_A_TU_LINKEDIN]" target="_blank">
@@ -151,9 +151,9 @@ Gracias por visitar mi rincón en GitHub. ¡Espero que disfrutes explorando mi t
 
 <div align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api?username=diojvi&show_icons=true&theme=tokyonight&icon_color=79ff97&hide_border=true&count_private=true" alt="Estadísticas de GitHub de Dionel"/>
+    <img src="https://github-readme-stats.vercel.app/api?username=DionelValera&show_icons=true&theme=tokyonight&icon_color=79ff97&hide_border=true&count_private=true" alt="Estadísticas de GitHub de Dionel"/>
   </a>
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=diojvi&layout=compact&theme=tokyonight&hide_border=true" alt="Lenguajes más usados por Dionel"/>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DionelValera&layout=compact&theme=tokyonight&hide_border=true" alt="Lenguajes más usados por Dionel"/>
   </a>
 </div>
