@@ -1,9 +1,9 @@
-# Portafolio de Dionel | Desarrollador Frontend
+# Dionel Valera | Desarrollador Frontend
 
-¡Hola! 👋 Soy Dionel, un apasionado desarrollador de software y creativo digital. Este repositorio contiene el código de mi portafolio personal, un espacio donde no solo muestro mis proyectos, sino también un reflejo de mi dedicación por construir experiencias de usuario limpias, eficientes y atractivas.
+¡Hola! 🎆 Soy Dionel, un apasionado desarrollador de software y creativo digital. Este repositorio contiene el código de mi portafolio personal, un espacio donde no solo muestro mis proyectos, sino también un reflejo de mi dedicación por construir experiencias de usuario limpias, eficientes y atractivas.
 
 <div align="center">
-  <a href="[ENLACE_A_TU_PORTAFOLIO_EN_VIVO]">
+  <a href="google.com">
     <!-- Puedes reemplazar esta imagen con una captura de tu portafolio -->
     <img src="https://raw.githubusercontent.com/gist/DionelValera/f9499638b73f9352c64f73c5a4aad7a1/raw/portfolio_placeholder.png" alt="Banner del Portafolio" width="800"/>
   </a>
