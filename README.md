@@ -1,6 +1,6 @@
-<div align="center"> </div># Dionel Valera | Desarrollador Frontend <div/>
+# 🎆Dionel Valera | Desarrollador Frontend🎆
 
-¡Hola! 🎆 Soy Dionel, un apasionado desarrollador de software y creativo digital. Este repositorio contiene el código de mi portafolio personal, un espacio donde no solo muestro mis proyectos, sino también un reflejo de mi dedicación por construir experiencias de usuario limpias, eficientes y atractivas.
+¡Hola! Soy Dionel, un apasionado desarrollador de software y creativo digital. Este repositorio contiene el código de mi portafolio personal, un espacio donde no solo muestro mis proyectos, sino también un reflejo de mi dedicación por construir experiencias de usuario limpias, eficientes y atractivas.
 
 <div align="center">
   <a href="[ENLACE_A_TU_PORTAFOLIO_EN_VIVO]">
