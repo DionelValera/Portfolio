@@ -46,7 +46,7 @@ Estas son algunas de las tecnologías y herramientas con las que trabajo diariam
   <img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white" alt="Arch Linux"/>
   <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"/>
   <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android"/>
-  <img src="https://img.shields.io/badge/Hyprland-00ADD8?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTEzMS4xMyAxMjEuODdsLTMuMTQtMy4xM2wtNDQuOTUgNDQuOTVsMy4xMyAzLjE0YTguNDIgOC40MiAwIDAgMCAxMS45MiAwbDQxLjg2LTQxLjg2YTguNDIgOC40MiAwIDAgMCAwLTExLjkyWm05MS4xOS0zOC4xMWwtNDQuOTYtNDQuOTVhOC40MiA44LjQyIDAgMCAwLTExLjkyIDBMMTYuMjEgMTU4YTguNDIgOC40MiAwIDAgMCAwIDExLjkybDQ0Ljk1IDQ0Ljk2YTguNDIgOC40MiAwIDAgMCAxMS45MiAwbDExOS4xNy0xMTkuMTdhOC40MiA4LjQyIDAgMCAwIDAtMTEuOTJabS0xOC4yNiA1Ljc2TDEzOC4xNCAxNTUuNDRsLTMuMTQtMy4xM2w2NS45Mi02NS45MmwzLjEzIDMuMTRhMi44MiAyLjgyIDAgMCAxIDAgMy45N1ptLTc2LjM0IDc2LjM0bC0zLjEzLTMuMTNsNjUuOTItNjUuOTJsMy4xMyAzLjE0YTIuODIgMi44MiAwIDAgMSAwIDMuOTdaIi8+PC9zdmc+" alt="Hyprland"/>
+  <img src="https://img.shields.io/badge/Hyprland-00ADD8?style=for-the-badge&logo=hyprland&logoColor=white" alt="Hyprland"/>
 </p>
 
 ### Herramientas, Diseño y Otros Conocimientos
@@ -98,7 +98,7 @@ Estas son algunas de las tecnologías y herramientas con las que trabajo diariam
 </p>
 <p>
   <img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white" alt="Arch Linux"/>
-  <img src="https://img.shields.io/badge/Hyprland-00ADD8?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTEzMS4xMyAxMjEuODdsLTMuMTQtMy4xM2wtNDQuOTUgNDQuOTVsMy4xMyAzLjE0YTguNDIgOC40MiAwIDAgMCAxMS45MiAwbDQxLjg2LTQxLjg2YTguNDIgOC40MiAwIDAgMCAwLTExLjkyWm05MS4xOS0zOC4xMWwtNDQuOTYtNDQuOTVhOC40MiA44LjQyIDAgMCAwLTExLjkyIDBMMTYuMjEgMTU4YTguNDIgOC40MiAwIDAgMCAwIDExLjkybDQ0Ljk1IDQ0Ljk2YTguNDIgOC40MiAwIDAgMCAxMS45MiAwbDExOS4xNy0xMTkuMTdhOC40MiA4LjQyIDAgMCAwIDAtMTEuOTJabS0xOC4yNiA1Ljc2TDEzOC4xNCAxNTUuNDRsLTMuMTQtMy4xM2w2NS45Mi02NS45MmwzLjEzIDMuMTRhMi44MiAyLjgyIDAgMCAxIDAgMy45N1ptLTc2LjM0IDc2LjM0bC0zLjEzLTMuMTNsNjUuOTItNjUuOTJsMy4xMyAzLjE0YTIuODIgMi44MiAwIDAgMSAwIDMuOTdaIi8+PC9zdmc+" alt="Hyprland"/>
+  <img src="https://img.shields.io/badge/Hyprland-00ADD8?style=for-the-badge&logo=hyprland&logoColor=white" alt="Hyprland"/>
   <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Shell Script"/>
 </p>
 <a href="https://github.com/DionelValera/Onix-hyprdots">Ver Repositorio →</a>
