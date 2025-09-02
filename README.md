@@ -3,7 +3,7 @@
 ¡Hola! Soy Dionel, un apasionado desarrollador de software y creativo digital. Este repositorio contiene el código de mi portafolio personal, un espacio donde no solo muestro mis proyectos, sino también un reflejo de mi dedicación por construir experiencias de usuario limpias, eficientes y atractivas.
 
 <div align="center">
-  <a href="[ENLACE_A_TU_PORTAFOLIO_EN_VIVO]">
+  <a href="https://tu-sitio-web.com">
     <!-- Puedes reemplazar esta imagen con una captura de tu portafolio -->
     <img src="https://raw.githubusercontent.com/gist/DionelValera/f9499638b73f9352c64f73c5a4aad7a1/raw/portfolio_placeholder.png" alt="Banner del Portafolio" width="800"/>
   </a>
@@ -67,7 +67,7 @@ Estas son algunas de las tecnologías y herramientas con las que trabajo diariam
   <img src="https://img.shields.io/badge/Lightroom-31A8FF?style=for-the-badge&logo=adobe-lightroom&logoColor=white" alt="Lightroom"/>
   <img src="https://img.shields.io/badge/Krita-203759?style=for-the-badge&logo=krita&logoColor=white" alt="Krita"/>
   <img src="https://img.shields.io/badge/Inkscape-000000?style=for-the-badge&logo=inkscape&logoColor=white" alt="Inkscape"/>
-  <img src="https://img.shields.io/badge/CorelDRAW-009642?style=for-the-badge" alt="CorelDRAW"/>
+  <img src="https://img.shields.io/badge/CorelDRAW-009642?style=for-the-badge&logo=coreldraw&logoColor=white" alt="CorelDRAW"/>
   
 </p>
 
@@ -133,10 +133,10 @@ Estoy siempre abierto a nuevas oportunidades, colaboraciones o simplemente a una
   <a href="https://github.com/DionelValera" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
-  <a href="[ENLACE_A_TU_LINKEDIN]" target="_blank">
+  <a href="https://www.linkedin.com/in/tu-usuario-de-linkedin" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
-  <a href="mailto:[TU_CORREO_ELECTRONICO]">
+  <a href="mailto:tu.correo@ejemplo.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
 </p>
