@@ -1,7 +1,7 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import "../styles/global.css";
-import Headerindex from "../components/header.astro";
+import Layout from "@/layouts/layout.astro";
+import "@/styles/global.css";
+import Headerindex from "@/components/header.astro";
 
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -12,7 +12,7 @@ import Headerindex from "../components/header.astro";
 	<body>
 		<main>
  <Headerindex/>
-		
+		<section id="home" class="h-screen">
   <h1>My Astro Site</h1>
   <h1>About Me</h1>
   <h2>... and my new Astro site!</h2>
@@ -20,6 +20,31 @@ import Headerindex from "../components/header.astro";
   <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
 
   <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+</section>
+<section id="about" class="h-screen">
+  <h1>About Me</h1>
+  <h2>... and my new Astro site!</h2>
 
+</section>
+<section id="experience" class="h-screen">
+  <h1>Experience</h1>
+  <h2>... and my new Astro site!</h2>
+
+</section>
+<section id="projects" class="h-screen">
+  <h1>Projects</h1>
+  <h2>... and my new Astro site!</h2>
+
+</section>
+<section id="skills" class="h-screen">
+  <h1>Skills</h1>
+  <h2>... and my new Astro site!</h2>
+
+</section>
+<section id="contact" class="h-screen">
+  <h1>Contact</h1>
+  <h2>... and my new Astro site!</h2>
+
+</section>
 </body>
 </Layout>
