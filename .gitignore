@@ -22,3 +22,4 @@
 
 # jetbrains setting folder
 #.idea/
+#añadio .astro dist node_modules y ya.
