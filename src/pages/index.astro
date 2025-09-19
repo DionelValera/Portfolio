@@ -6,44 +6,91 @@ import Headerindex from "@/components/header.astro";
 
 <Layout>
   <body class="">
-    <main class="bg-gradient-to-br from-indigo-50 to-blue-100 font-sans">
-      <Headerindex/>
-      <div class="flex flex-col gap-8 max-w-7xl mx-auto py-10">
-        <section id="home" class="rounded-xl shadow-lg bg-white p-8 hover:scale-[1.02] transition-transform">
-          <h1 class="text-4xl font-bold text-indigo-700 mb-2">Bienvenido a Mi Portfolio</h1>
-          <h2 class="text-xl text-indigo-500 mb-4">¡Descubre mi trabajo con Astro!</h2>
-          <p class="text-gray-700">Estoy aprendiendo Astro y aquí comparto mi progreso. ¡Explora mis proyectos y habilidades!</p>
+    <Headerindex />
+    <main class="pt-24 bg-gradient-to-br from-indigo-50 to-blue-100 font-sans">
+      <div class="flex flex-col gap-8 max-w-xl mx-auto py-10">
+        <section
+          id="home"
+          class="rounded-xl shadow-lg bg-white p-8 hover:scale-[1.02] transition-transform"
+        >
+          <h1 class="text-4xl font-bold text-indigo-700 mb-2">
+            Bienvenido a Mi Portfolio
+          </h1>
+          <h2 class="text-xl text-indigo-500 mb-4">
+            ¡Descubre mi trabajo con Astro!
+          </h2>
+          <p class="text-gray-700">
+            Estoy aprendiendo Astro y aquí comparto mi progreso. ¡Explora mis
+            proyectos y habilidades!
+          </p>
         </section>
-        <section id="about" class="rounded-xl shadow-lg bg-white p-8 hover:scale-[1.02] transition-transform">
+        <section
+          id="about"
+          class="rounded-xl shadow-lg bg-white p-8 hover:scale-[1.02] transition-transform"
+        >
           <h1 class="text-3xl font-semibold text-indigo-700 mb-2">Sobre Mí</h1>
-          <p class="text-gray-700">Desarrollador apasionado por la tecnología y el aprendizaje continuo.</p>
+          <p class="text-gray-700">
+            Desarrollador apasionado por la tecnología y el aprendizaje
+            continuo.
+          </p>
         </section>
-        <section id="experience" class="rounded-xl shadow-lg bg-white p-8 hover:scale-[1.02] transition-transform">
-          <h1 class="text-3xl font-semibold text-indigo-700 mb-2">Experiencia</h1>
+        <section
+          id="experience"
+          class="rounded-xl shadow-lg bg-white p-8 hover:scale-[1.02] transition-transform"
+        >
+          <h1 class="text-3xl font-semibold text-indigo-700 mb-2">
+            Experiencia
+          </h1>
           <ul class="list-disc pl-5 text-gray-700">
             <li>Desarrollador Web en XYZ</li>
             <li>Freelancer en proyectos de React y Node.js</li>
           </ul>
         </section>
-        <section id="projects" class="rounded-xl shadow-lg bg-white p-8 hover:scale-[1.02] transition-transform">
+        <section
+          id="projects"
+          class="rounded-xl shadow-lg bg-white p-8 hover:scale-[1.02] transition-transform"
+        >
           <h1 class="text-3xl font-semibold text-indigo-700 mb-2">Proyectos</h1>
           <ul class="list-disc pl-5 text-gray-700">
             <li>Portfolio Personal</li>
             <li>App de Tareas</li>
           </ul>
         </section>
-        <section id="skills" class="rounded-xl shadow-lg bg-white p-8 hover:scale-[1.02] transition-transform">
+        <section
+          id="skills"
+          class="rounded-xl shadow-lg bg-white p-8 hover:scale-[1.02] transition-transform"
+        >
           <h1 class="text-3xl font-semibold text-indigo-700 mb-4">Skills</h1>
           <div class="flex flex-wrap gap-3">
-            <span class="bg-indigo-100 text-indigo-700 px-4 py-1 rounded-full font-medium">JavaScript</span>
-            <span class="bg-indigo-100 text-indigo-700 px-4 py-1 rounded-full font-medium">Astro</span>
-            <span class="bg-indigo-100 text-indigo-700 px-4 py-1 rounded-full font-medium">React</span>
-            <span class="bg-indigo-100 text-indigo-700 px-4 py-1 rounded-full font-medium">CSS</span>
+            <span
+              class="bg-indigo-100 text-indigo-700 px-4 py-1 rounded-full font-medium"
+              >JavaScript</span
+            >
+            <span
+              class="bg-indigo-100 text-indigo-700 px-4 py-1 rounded-full font-medium"
+              >Astro</span
+            >
+            <span
+              class="bg-indigo-100 text-indigo-700 px-4 py-1 rounded-full font-medium"
+              >React</span
+            >
+            <span
+              class="bg-indigo-100 text-indigo-700 px-4 py-1 rounded-full font-medium"
+              >CSS</span
+            >
           </div>
         </section>
-        <section id="contact" class="rounded-xl shadow-lg bg-white p-8 hover:scale-[1.02] transition-transform">
+        <section
+          id="contact"
+          class="rounded-xl shadow-lg bg-white p-8 hover:scale-[1.02] transition-transform"
+        >
           <h1 class="text-3xl font-semibold text-indigo-700 mb-2">Contacto</h1>
-          <p class="text-gray-700">¿Quieres trabajar conmigo? <a href="mailto:tuemail@correo.com" class="text-indigo-500 underline">¡Escríbeme!</a></p>
+          <p class="text-gray-700">
+            ¿Quieres trabajar conmigo? <a
+              href="mailto:tuemail@correo.com"
+              class="text-indigo-500 underline">¡Escríbeme!</a
+            >
+          </p>
         </section>
       </div>
     </main>
