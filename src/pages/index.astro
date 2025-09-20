@@ -1,7 +1,7 @@
 ---
 import Layout from "@/layouts/layout.astro";
 import "@/styles/global.css";
-import SplitText from "@/components/SplitText.jsx"; // Importa el componente React
+import SplitText from "@/components/SplitText.jsx";
 
 const handleAnimationComplete = () => {
   console.log('All letters have animated!');
@@ -9,11 +9,11 @@ const handleAnimationComplete = () => {
 ---
 <Layout>
   <body class="w-full m-0 p-0 box-border">
-    <main class="items-center justify-center flex min-h-screen">
+    <main class="items-center justify-center flex min-h-screen text-black">
       <SplitText
         client:visible 
-        text="Hello, GSAP!"
-        className="text-2xl font-semibold text-center"
+        text="Proximamente..."
+        className="text-9xl text-center p-10"
         delay={100}
         duration={0.6}
         ease="power3.out"
