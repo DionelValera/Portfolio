@@ -1,14 +1,30 @@
 ---
 import Layout from "@/layouts/layout.astro";
 import "@/styles/global.css";
-import SplitText from 
+import SplitText from "@/components/SplitText.jsx"; // Importa el componente React
 
+const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+};
 ---
-
 <Layout>
   <body class="w-full m-0 p-0 box-border">
     <main class="items-center justify-center flex min-h-screen">
-      <h1 class="text-9xl">Coming Soon...</h1>
+      <SplitText
+        client:visible 
+        text="Hello, GSAP!"
+        className="text-2xl font-semibold text-center"
+        delay={100}
+        duration={0.6}
+        ease="power3.out"
+        splitType="chars"
+        from={{ opacity: 0, y: 40 }}
+        to={{ opacity: 1, y: 0 }}
+        threshold={0.1}
+        rootMargin="-100px"
+        textAlign="center"
+        onLetterAnimationComplete={handleAnimationComplete}
+      />
     </main>
   </body>
 </Layout>
