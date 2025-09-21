@@ -2,41 +2,72 @@
 import Layout from '@/layouts/layout.astro';
 import '@/styles/global.css';
 import SplitText from '@/components/SplitText.jsx';
+import CurvedLoop from '@/components/CurvedLoop';
 
 const handleAnimationComplete = () => {
-	console.log('All letters have animated!');
+  console.log('All letters have animated!');
 };
 ---
-<Layout>
-	<body class="m-0 box-border w-full p-0">
-		<main class="flex min-h-screen items-center justify-center text-black">
-			<img
-				src="/background/fondo.jpg"
-				alt="Imagen de fondo para escritorio y tablet con un degradado de colores"
-				class="fixed top-0 left-0 -z-10 hidden h-full w-full object-cover scale-200 sm:block"
-			/>
-			<img
-				src="/background/fondo-mobile.jpg"
-				alt="Imagen de fondo para móvil con un degradado de colores"
-				class="fixed top-0 left-0 -z-10 block h-full w-full object-cover sm:hidden"
-			/>
-			<div class="absolute top-0 left-0 -z-10 h-full w-full bg-black/10 backdrop-blur-xl"></div>
 
-			<SplitText
-				client:visible
-				text="Pronto..."
-				className="p-4 text-center text-5xl text-white sm:p-10 sm:text-xl md:text-7xl lg:text-9xl"
-				delay={100}
-				duration={0.6}
-				ease="power3.out"
-				splitType="chars"
-				from={{ opacity: 0, y: 40 }}
-				to={{ opacity: 1, y: 0 }}
-				threshold={0.1}
-				rootMargin="-100px"
-				textAlign="center"
-				onLetterAnimationComplete={handleAnimationComplete}
-			/>
-		</main>
-	</body>
+<Layout>
+  <body class="m-0 box-border w-full p-0">
+    <main>
+      <img
+        src="/background/fondo.jpg"
+        alt="Imagen de fondo para escritorio y tablet con un degradado de colores"
+        class="fixed top-0 left-0 -z-10 hidden h-full w-full object-cover sm:block"
+      />
+      <img
+        src="/background/fondo-mobile.jpg"
+        alt="Imagen de fondo para móvil con un degradado de colores"
+        class="fixed top-0 left-0 -z-10 block h-full w-full object-cover sm:hidden"
+      />
+      <div
+        class="fixed top-0 left-0 -z-10 h-screen w-full bg-black/10 backdrop-blur-xl"
+      >
+      </div>
+      <!-- Sección 1: Ocupa la primera pantalla completa -->
+      <section
+        class="hidden relative flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-black/20 via-black/10 to-transparent"
+      >
+        <SplitText
+          client:visible
+          text="Pronto..."
+          className="p-4 text-center text-5xl text-white sm:p-10 md:text-7xl lg:text-9xl"
+          delay={100}
+          duration={0.6}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+          textAlign="center"
+          onLetterAnimationComplete={handleAnimationComplete}
+        />
+      </section>
+      <!-- Sección 2: Ocupa la segunda pantalla completa -->
+      <section
+        class="relative flex h-screen w-full flex-col items-center justify-center"
+      >
+        <CurvedLoop
+          client:visible
+          marqueeText="BProximamente...✦"
+          speed={2}
+          curveAmount={250}
+          direction="left"
+          interactive={true}
+          className="custom-text-style"
+        />
+        <footer class="absolute bottom-4 text-center text-sm text-white/70">
+          <p>Desarrollado por Dionel Valera</p>
+          <p>© {new Date().getFullYear()} Todos los derechos reservados.</p>
+        </footer>
+      </section>
+    </main>
+  </body>
+  <script>
+    import { gsap } from 'gsap';
+    console.log('using GSAP: ', gsap.version);
+  </script>
 </Layout>
