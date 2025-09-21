@@ -28,7 +28,7 @@ import DecryptedText from '@/components/DecryptedText';
     <div
       style={{
         width: '100vw',
-        height: '100vh',
+        height: '100svh',
         display: 'flex',
         background: '#000',
         position: 'fixed',
@@ -47,7 +47,7 @@ import DecryptedText from '@/components/DecryptedText';
       />
     </div>
     <main
-      class="relative z-10 h-screen flex flex-col items-center justify-center text-white text-center"
+      class="relative z-10 h-[100svh] flex flex-col items-center justify-center text-white text-center"
     >
       <div
         class="text-6xl mb-20"
@@ -63,7 +63,7 @@ import DecryptedText from '@/components/DecryptedText';
           animateOn="view"
         />
       </div>
-      <div class="bottom-0 right-0 fixed m-10">
+      <div class="bottom-0 fixed right-0 fixed m-10">
         <CircularText
           client:visible
           text="*DIONEL*VALERA*DIONEL*VALERA"
