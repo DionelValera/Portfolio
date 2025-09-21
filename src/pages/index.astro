@@ -3,7 +3,7 @@ import Layout from '@/layouts/layout.astro';
 import '@/styles/global.css';
 import SplitText from '@/components/SplitText.jsx';
 import CurvedLoop from '@/components/CurvedLoop';
-
+import Silk from '@/components/Silk.jsx';
 const handleAnimationComplete = () => {
   console.log('All letters have animated!');
 };
@@ -11,7 +11,7 @@ const handleAnimationComplete = () => {
 
 <Layout>
   <body class="m-0 box-border w-full p-0">
-    <main>
+    <main class="relative m-0 box-border flex min-h-screen w-full flex-col p-0">
       <img
         src="/background/fondo.jpg"
         alt="Imagen de fondo para escritorio y tablet con un degradado de colores"
@@ -26,9 +26,24 @@ const handleAnimationComplete = () => {
         class="fixed top-0 left-0 -z-10 h-screen w-full bg-black/10 backdrop-blur-xl"
       >
       </div>
+
       <!-- Sección 1: Ocupa la primera pantalla completa -->
       <section
-        class="hidden relative flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-black/20 via-black/10 to-transparent"
+        class="relative hidden h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-black/20 via-black/10 to-transparent sm:flex"
+      >
+        <CurvedLoop
+          client:visible
+          marqueeText="Proximamente...✦"
+          speed={2}
+          curveAmount={250}
+          direction="left"
+          interactive={true}
+          className="custom-text-style"
+        />
+      </section>
+      <!-- Sección 2: Ocupa la segunda pantalla completa -->
+      <section
+        class="relative flex h-screen w-full flex-col items-center justify-center"
       >
         <SplitText
           client:visible
@@ -45,23 +60,6 @@ const handleAnimationComplete = () => {
           textAlign="center"
           onLetterAnimationComplete={handleAnimationComplete}
         />
-      </section>
-      <!-- Sección 2: Ocupa la segunda pantalla completa -->
-      <section
-        class="relative flex h-screen w-full flex-col items-center justify-center"
-      >
-        <CurvedLoop
-          client:visible
-          marqueeText="Proximamente...✦"
-          speed={2}
-          curveAmount={250}
-          direction="left"
-          interactive={true}
-          className="custom-text-style"
-        />
-        <footer class="absolute bottom-4 text-center text-sm text-white/70">
-          <p>Desarrollado por Dionel Valera</p>
-        </footer>
       </section>
     </main>
   </body>
