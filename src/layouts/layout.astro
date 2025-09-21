@@ -1,68 +1,98 @@
 ---
 /* import Header from "@/components/header.astro"; */
-import "@/styles/global.css";
+import '@/styles/global.css';
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portafolio Profesional - Dionel Valera</title>
-    <meta name="description" content="Portafolio de Dionel Valera, desarrollador web especializado en Arch Linux y tecnologías frontend.">
-    <meta name="author" content="Dionel Valera">
-    <meta name="keywords" content="portafolio, desarrollador, arch linux, hyprland, frontend, html, css, javascript, vscode, kate">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <meta
+      name="description"
+      content="Portafolio de Dionel Valera, desarrollador web especializado en Arch Linux y tecnologías frontend."
+    />
+    <meta name="author" content="Dionel Valera" />
+    <meta
+      name="keywords"
+      content="portafolio, desarrollador, arch linux, hyprland, frontend, html, css, javascript, vscode, kate"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
 
     <!-- Metadatos adicionales -->
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tu-portafolio.com">
-    <meta property="og:title" content="Mi Portafolio Profesional - Dionel Valera">
-    <meta property="og:description" content="Portafolio de Dionel Valera, desarrollador web especializado en Arch Linux y tecnologías frontend.">
-    <meta property="og:image" content="https://tu-portafolio.com/images/imagen-destacada.jpg">
-    <meta property="og:image:alt" content="Captura de pantalla del portafolio de Dionel Valera">
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:site_name" content="Dionel Valera - Portafolio">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tu-portafolio.com" />
+    <meta
+      property="og:title"
+      content="Mi Portafolio Profesional - Dionel Valera"
+    />
+    <meta
+      property="og:description"
+      content="Portafolio de Dionel Valera, desarrollador web especializado en Arch Linux y tecnologías frontend."
+    />
+    <meta
+      property="og:image"
+      content="https://tu-portafolio.com/images/imagen-destacada.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Captura de pantalla del portafolio de Dionel Valera"
+    />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Dionel Valera - Portafolio" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://tu-portafolio.com">
-    <meta property="twitter:title" content="Mi Portafolio Profesional - Dionel Valera">
-    <meta property="twitter:description" content="Portafolio de Dionel Valera, desarrollador web especializado en Arch Linux y tecnologías frontend.">
-    <meta property="twitter:image" content="https://tu-portafolio.com/images/imagen-destacada.jpg">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://tu-portafolio.com" />
+    <meta
+      property="twitter:title"
+      content="Mi Portafolio Profesional - Dionel Valera"
+    />
+    <meta
+      property="twitter:description"
+      content="Portafolio de Dionel Valera, desarrollador web especializado en Arch Linux y tecnologías frontend."
+    />
+    <meta
+      property="twitter:image"
+      content="https://tu-portafolio.com/images/imagen-destacada.jpg"
+    />
 
     <!-- Otros -->
-    <link rel="canonical" href="https://tu-portafolio.com">
-    <meta name="theme-color" content="#COLOR_PRIMARIO_DEL_SITIO">
+    <link rel="canonical" href="https://tu-portafolio.com" />
+    <meta name="theme-color" content="#COLOR_PRIMARIO_DEL_SITIO" />
 
     <!-- Especificar el idioma del contenido -->
-    <meta http-equiv="content-language" content="es">
+    <meta http-equiv="content-language" content="es" />
 
     <!-- Favicons para diferentes dispositivos -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Configuración para la barra de direcciones en dispositivos móviles (iOS y Android) -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
     <!-- Control de caché -->
-    <meta http-equiv="cache-control" content="public, max-age=3600">
+    <meta http-equiv="cache-control" content="public, max-age=3600" />
 
     <!-- Formato de detección de teléfono -->
-    <meta name="format-detection" content="telephone=no">
-    <meta name="theme-color" content="#5a76da">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000000" />
   </head>
   <body>
-      <slot />
+    <slot />
   </body>
 </html>
 
