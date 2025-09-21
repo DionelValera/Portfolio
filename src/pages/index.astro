@@ -13,13 +13,14 @@ const handleAnimationComplete = () => {
 			<img
 				src="/background/fondo.jpg"
 				alt="Imagen de fondo para escritorio y tablet con un degradado de colores"
-				class="fixed top-0 left-0 -z-10 hidden h-full w-full object-cover blur-2xl scale-200 sm:block"
+				class="fixed top-0 left-0 -z-10 hidden h-full w-full object-cover scale-200 sm:block"
 			/>
 			<img
 				src="/background/fondo-mobile.jpg"
 				alt="Imagen de fondo para móvil con un degradado de colores"
-				class="fixed top-0 left-0 -z-10 block h-full w-full object-cover blur-2xl scale-150 sm:hidden"
+				class="fixed top-0 left-0 -z-10 block h-full w-full object-cover sm:hidden"
 			/>
+			<div class="absolute top-0 left-0 -z-10 h-full w-full bg-black/10 backdrop-blur-xl"></div>
 
 			<SplitText
 				client:visible
