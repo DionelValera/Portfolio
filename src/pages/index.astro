@@ -5,6 +5,7 @@ import SplitText from '@/components/SplitText.jsx';
 import CurvedLoop from '@/components/CurvedLoop';
 import Silk from '@/components/Silk.jsx';
 import ShinyText from '@/components/ShinyText.jsx';
+import GradientText from '@/components/GradientText.jsx';
 const handleAnimationComplete = () => {
   console.log('All letters have animated!');
 };
@@ -21,7 +22,7 @@ const handleAnimationComplete = () => {
       <img
         src="/background/fondo-mobile.jpg"
         alt="Imagen de fondo para móvil con un degradado de colores"
-        class="fixed top-0 pt-10 left-0 -z-10 block h-full w-full object-cover sm:hidden"
+        class="fixed top-0 left-0 -z-10 block h-full w-full object-cover sm:hidden scale-110"
       />
       <div
         class="fixed top-0 left-0 -z-10 h-screen w-full bg-black/10 backdrop-blur-xl"
@@ -46,13 +47,16 @@ const handleAnimationComplete = () => {
       <section
         class="relative flex h-screen w-full flex-col items-center justify-center"
       >
-        <ShinyText
+        <GradientText
           client:visible
           text="Pronto..."
-          disabled={false}
-          speed={2}
+          colors={['#40ffaa', '#4079ff', '#40ffaa', '#4079ff', '#40ffaa']}
+          animationSpeed={3}
+          showBorder={false}
           className="custom-class"
-        />
+        >
+          Add a splash of color!
+        </GradientText>
         <!-- <SplitText
           client:visible
           text="Pronto..."
