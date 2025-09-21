@@ -1,22 +1,21 @@
 ---
 import Layout from '@/layouts/layout.astro';
 import '@/styles/global.css';
-import SplitText from '@/components/SplitText.jsx';
-import CurvedLoop from '@/components/CurvedLoop';
 import Silk from '@/components/Silk.jsx';
-import ShinyText from '@/components/ShinyText.jsx';
-import GradientText from '@/components/GradientText.jsx';
 import Particles from '@/components/Particles.jsx';
-import Lightning from '@/components/Lightning.jsx';
-import Ballpit from '@/components/Ballpit.jsx';
-import PixelBlast from '@/components/PixelBlast';
-import Dither from '@/components/Dither';
-const handleAnimationComplete = () => {
-  console.log('All letters have animated!');
-};
+import CircularText from '@/components/CircularText';
+import DecryptedText from '@/components/DecryptedText';
 ---
 
 <Layout>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
   <body class="m-0 p-0 scroll-hidden bg-black">
     <!--  <Silk
       client:load
@@ -26,17 +25,17 @@ const handleAnimationComplete = () => {
       noiseIntensity={1}
       rotation={6}
     /> -->
-    <!-- <div
+    <div
       style={{
         width: '100vw',
         height: '100vh',
         display: 'flex',
-        position: 'relative',
         background: '#000',
+        position: 'fixed',
       }}
     >
       <Particles
-        client:load
+        client:visible
         particleColors={['#ffffff', '#ffffff']}
         particleCount={200}
         particleSpread={10}
@@ -46,29 +45,30 @@ const handleAnimationComplete = () => {
         alphaParticles={false}
         disableRotation={false}
       />
-    </div> -->
-
-    <div
-      style={{
-        width: '100%',
-        height: '100vh',
-        width: '100vw',
-        position: 'relative',
-        background: '#000',
-      }}
-    >
-      <Dither
-        client:load
-        waveColor={[0.5, 0.5, 0.5]}
-        disableAnimation={false}
-        enableMouseInteraction={false}
-        mouseRadius={0.3}
-        colorNum={4}
-        waveAmplitude={0.3}
-        waveFrequency={3}
-        waveSpeed={0.05}
-      />
     </div>
-    <main></main>
+    <main
+      class="relative z-10 h-screen flex flex-col items-center justify-center text-white text-center"
+    >
+      <div class="text-6xl" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        <DecryptedText
+          client:load
+          speed={70}
+          sequential={true}
+          text="Muy Pronto..."
+          revealDirection="Start"
+          useOriginalCharsOnly={false}
+          animateOn="view"
+        />
+      </div>
+      <div class="bottom-0 right-0 fixed m-10">
+        <CircularText
+          client:visible
+          text="*DIONEL*VALERA*DIONEL*VALERA"
+          onHover="pause"
+          spinDuration={10}
+          className="custom-class text-sm"
+        />
+      </div>
+    </main>
   </body>
 </Layout>
