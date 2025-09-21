@@ -12,14 +12,19 @@ const handleAnimationComplete = () => {
 		<main class="flex min-h-screen items-center justify-center text-black">
 			<img
 				src="/background/fondo.jpg"
-				alt="iamgen de fondo de un degradado de colores"
-				class="fixed top-0 left-0 -z-10 h-full w-full object-cover blur-2xl scale-105"
+				alt="Imagen de fondo para escritorio y tablet con un degradado de colores"
+				class="fixed top-0 left-0 -z-10 hidden h-full w-full object-cover blur-2xl scale-200 sm:block"
+			/>
+			<img
+				src="/background/fondo-mobile.jpg"
+				alt="Imagen de fondo para móvil con un degradado de colores"
+				class="fixed top-0 left-0 -z-10 block h-full w-full object-cover blur-2xl scale-200 sm:hidden"
 			/>
 
 			<SplitText
 				client:visible
-				text="Proximamente..."
-				className="p-10 text-white text-center text-7xl "
+				text="Luego..."
+				className="p-4 text-center text-5xl text-white sm:p-10 sm:text-xl md:text-7xl lg:text-9xl"
 				delay={100}
 				duration={0.6}
 				ease="power3.out"
