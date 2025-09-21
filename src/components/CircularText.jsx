@@ -7,7 +7,7 @@ const getRotationTransition = (duration, from, loop = true) => ({
   ease: 'linear',
   duration,
   type: 'tween',
-  repeat: loop ? Infinity : 0
+  repeat: loop ? Infinity : 0,
 });
 
 const getTransition = (duration, from) => ({
@@ -15,11 +15,16 @@ const getTransition = (duration, from) => ({
   scale: {
     type: 'spring',
     damping: 20,
-    stiffness: 300
-  }
+    stiffness: 300,
+  },
 });
 
-const CircularText = ({ text, spinDuration = 20, onHover = 'speedUp', className = '' }) => {
+const CircularText = ({
+  text,
+  spinDuration = 20,
+  onHover = 'speedUp',
+  className = '',
+}) => {
   const letters = Array.from(text);
   const controls = useAnimation();
   const rotation = useMotionValue(0);
@@ -28,8 +33,8 @@ const CircularText = ({ text, spinDuration = 20, onHover = 'speedUp', className 
     const start = rotation.get();
     controls.start({
       rotate: start + 360,
-      scale: 1,
-      transition: getTransition(spinDuration, start)
+      scale: 0.7,
+      transition: getTransition(spinDuration, start),
     });
   }, [spinDuration, text, onHover, controls, rotation]);
 
@@ -38,7 +43,7 @@ const CircularText = ({ text, spinDuration = 20, onHover = 'speedUp', className 
     if (!onHover) return;
 
     let transitionConfig;
-    let scaleVal = 1;
+    let scaleVal = 0.7;
 
     switch (onHover) {
       case 'slowDown':
@@ -50,7 +55,7 @@ const CircularText = ({ text, spinDuration = 20, onHover = 'speedUp', className 
       case 'pause':
         transitionConfig = {
           rotate: { type: 'spring', damping: 20, stiffness: 300 },
-          scale: { type: 'spring', damping: 20, stiffness: 300 }
+          scale: { type: 'spring', damping: 20, stiffness: 300 },
         };
         scaleVal = 1;
         break;
@@ -65,7 +70,7 @@ const CircularText = ({ text, spinDuration = 20, onHover = 'speedUp', className 
     controls.start({
       rotate: start + 360,
       scale: scaleVal,
-      transition: transitionConfig
+      transition: transitionConfig,
     });
   };
 
@@ -73,8 +78,8 @@ const CircularText = ({ text, spinDuration = 20, onHover = 'speedUp', className 
     const start = rotation.get();
     controls.start({
       rotate: start + 360,
-      scale: 1,
-      transition: getTransition(spinDuration, start)
+      scale: 0.7,
+      transition: getTransition(spinDuration, start),
     });
   };
 
