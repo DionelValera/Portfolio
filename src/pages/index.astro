@@ -4,6 +4,7 @@ import '@/styles/global.css';
 import SplitText from '@/components/SplitText.jsx';
 import CurvedLoop from '@/components/CurvedLoop';
 import Silk from '@/components/Silk.jsx';
+import ShinyText from '@/components/ShinyText.jsx';
 const handleAnimationComplete = () => {
   console.log('All letters have animated!');
 };
@@ -45,7 +46,14 @@ const handleAnimationComplete = () => {
       <section
         class="relative flex h-screen w-full flex-col items-center justify-center"
       >
-        <SplitText
+        <ShinyText
+          client:visible
+          text="Just some shiny text!"
+          disabled={false}
+          speed={2}
+          className="custom-class"
+        />
+        <!-- <SplitText
           client:visible
           text="Pronto..."
           className="p-4 text-center text-5xl text-white sm:p-10 md:text-7xl lg:text-9xl"
@@ -59,7 +67,7 @@ const handleAnimationComplete = () => {
           rootMargin="-100px"
           textAlign="center"
           onLetterAnimationComplete={handleAnimationComplete}
-        />
+        /> -->
       </section>
     </main>
   </body>
