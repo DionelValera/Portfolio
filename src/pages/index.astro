@@ -13,7 +13,15 @@ const handleAnimationComplete = () => {
 
 <Layout>
   <body class="m-0 box-border w-full p-0">
-    <main class="relative m-0 box-border flex min-h-screen w-full flex-col p-0">
+    <Silk
+      client:load
+      speed={10}
+      scale={1.3}
+      color="#7B7481"
+      noiseIntensity={1}
+      rotation={0}
+    />
+    <!--  <main class="relative m-0 box-border flex min-h-screen w-full flex-col p-0">
       <img
         src="/background/fondo.jpg"
         alt="Imagen de fondo para escritorio y tablet con un degradado de colores"
@@ -29,35 +37,32 @@ const handleAnimationComplete = () => {
       >
       </div>
 
-      <!-- Sección 1: Ocupa la primera pantalla completa -->
-      <section
-        class="relative hidden h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-black/20 via-black/10 to-transparent sm:flex"
+    <section
+      class="relative hidden h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-black/20 via-black/10 to-transparent sm:flex"
+    >
+      <CurvedLoop
+        client:load
+        marqueeText="Proximamente...✦"
+        speed={2}
+        curveAmount={250}
+        direction="left"
+        interactive={true}
+        className="custom-text-style"
+      />
+    </section>
+    <section
+      class="relative flex h-screen w-full flex-col items-center justify-center"
+    >
+      <GradientText
+        client:load
+        colors={['#40ffaa', '#4079ff', '#40ffaa', '#4079ff', '#40ffaa']}
+        animationSpeed={3}
+        showBorder={false}
+        className="custom-class"
       >
-        <CurvedLoop
-          client:visible
-          marqueeText="Proximamente...✦"
-          speed={2}
-          curveAmount={250}
-          direction="left"
-          interactive={true}
-          className="custom-text-style"
-        />
-      </section>
-      <!-- Sección 2: Ocupa la segunda pantalla completa -->
-      <section
-        class="relative flex h-screen w-full flex-col items-center justify-center"
-      >
-        <GradientText
-          client:visible
-          text="Pronto..."
-          colors={['#40ffaa', '#4079ff', '#40ffaa', '#4079ff', '#40ffaa']}
-          animationSpeed={3}
-          showBorder={false}
-          className="custom-class"
-        >
-          Add a splash of color!
-        </GradientText>
-        <!-- <SplitText
+        Add a splash of color!
+      </GradientText>
+      <SplitText
           client:visible
           text="Pronto..."
           className="p-4 text-center text-5xl text-white sm:p-10 md:text-7xl lg:text-9xl"
@@ -71,12 +76,7 @@ const handleAnimationComplete = () => {
           rootMargin="-100px"
           textAlign="center"
           onLetterAnimationComplete={handleAnimationComplete}
-        /> -->
-      </section>
-    </main>
+        /> 
+    </section> -->
   </body>
-  <script>
-    import { gsap } from 'gsap';
-    console.log('using GSAP: ', gsap.version);
-  </script>
 </Layout>
