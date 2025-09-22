@@ -1,17 +1,80 @@
 ---
-import "@/styles/global.css";
+import '@/styles/global.css';
+import BubbleMenu from '@/components/BubbleMenu';
+
+const items = [
+  {
+    label: 'home',
+    href: '#',
+    ariaLabel: 'Home',
+    rotation: -8,
+    hoverStyles: { bgColor: '#3b82f6', textColor: '#ffffff' },
+  },
+  {
+    label: 'about',
+    href: '#',
+    ariaLabel: 'About',
+    rotation: 8,
+    hoverStyles: { bgColor: '#10b981', textColor: '#ffffff' },
+  },
+  {
+    label: 'projects',
+    href: '#',
+    ariaLabel: 'Projects',
+    rotation: 8,
+    hoverStyles: { bgColor: '#f59e0b', textColor: '#ffffff' },
+  },
+  {
+    label: 'blog',
+    href: '#',
+    ariaLabel: 'Blog',
+    rotation: 8,
+    hoverStyles: { bgColor: '#ef4444', textColor: '#ffffff' },
+  },
+  {
+    label: 'contact',
+    href: '#',
+    ariaLabel: 'Contact',
+    rotation: -8,
+    hoverStyles: { bgColor: '#8b5cf6', textColor: '#ffffff' },
+  },
+];
+
+// Añade handlers/props por defecto para satisfacer la interfaz de BubbleMenu
+const handleMenuClick = () => {};
+const menuClass = '';
+const menuStyle = {};
+const logoProp = null; // o string/component si prefieres
 ---
+
 <header>
-    <div class="flex justify-center items-center">
-        <nav class="mt-5 rounded-full bg-white/60 drop-shadow-2xl fixed top-0 w-auto items-center justify-center z-10 backdrop-blur-xs">
-            <ul class="flex gap-4 p-4 px-8 overflow-x-auto whitespace-nowrap md:gap-6 md:justify-center">
-                <li><a href="#home" class="text-gray-600 hover:text-gray-900 transition-colors">Inicio</a></li>
-                <li><a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors">Sobre Mí</a></li>
-                <li><a href="#experience" class="text-gray-600 hover:text-gray-900 transition-colors">Experiencia</a></li>
-                <li><a href="#projects" class="text-gray-600 hover:text-gray-900 transition-colors">Proyectos</a></li>
-                <li><a href="#skills" class="text-gray-600 hover:text-gray-900 transition-colors">Skills</a></li>
-                <li><a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
+  <div class="sm:hidden block">
+    <BubbleMenu
+      client:visible
+      logo={logoProp}
+      onMenuClick={handleMenuClick}
+      className={menuClass}
+      style={menuStyle}
+      items={items}
+      menuAriaLabel="Toggle navigation"
+      menuBg="#ffffff"
+      menuContentColor="#111111"
+      useFixedPosition={false}
+      animationEase="back.out(1.5)"
+      animationDuration={0.5}
+      staggerDelay={0.12}
+    >
+      <a slot="logo" href="/" class="inline-flex items-center gap-2">
+        <img
+          src="/vscodium.svg"
+          alt="Logo de Dionel Valera"
+          class="h-8 w-auto"
+          loading="lazy"
+        />
+        <span class="text-sm font-semibold text-gray-900 dark:text-white"
+          >Dionel Valera</span
+        >
+      </a>
+    </BubbleMenu>
+  </div>
 </header>
