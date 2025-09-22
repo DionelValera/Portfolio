@@ -1,7 +1,16 @@
 ---
 import '@/styles/global.css';
 import BubbleMenu from '@/components/BubbleMenu';
+import CardNav from '@/components/CardNav.jsx';
+import logo from './public/vscodium.svg';
+import GooeyNav from '@/components/GooeyNav';
 
+// reemplaza/añade este items con la estructura que quieres
+const items2 = [
+  { label: 'Home', href: '#' },
+  { label: 'About', href: '#' },
+  { label: 'Contact', href: '#' },
+];
 const items = [
   {
     label: 'home',
@@ -40,15 +49,16 @@ const items = [
   },
 ];
 
-// Añade handlers/props por defecto para satisfacer la interfaz de BubbleMenu
+// handlers/props por defecto (evitan errores de tipado)
 const handleMenuClick = () => {};
 const menuClass = '';
 const menuStyle = {};
-const logoProp = null; // o string/component si prefieres
+const logoProp = logo; // <-- asigna el logo importado
 ---
 
 <header>
-  <div class="sm:hidden block">
+  <div class="hidden">
+    <!-- tu BubbleMenu existente -->
     <BubbleMenu
       client:visible
       logo={logoProp}
@@ -71,10 +81,27 @@ const logoProp = null; // o string/component si prefieres
           class="h-8 w-auto"
           loading="lazy"
         />
-        <span class="text-sm font-semibold text-gray-900 dark:text-white"
-          >Dionel Valera</span
-        >
+        <span class="text-sm font-semibold text-gray-900 dark:text-white">
+          Dionel Valera
+        </span>
       </a>
     </BubbleMenu>
+  </div>
+
+  <div class="">
+    <!-- Header superior, centrado y responsivo usando Tailwind -->
+    <div class="h-24 flex items-center justify-center relative">
+      <GooeyNav
+        client:visible
+        items={items2}
+        particleCount={15}
+        particleDistances={[90, 10]}
+        particleR={100}
+        initialActiveIndex={0}
+        animationTime={600}
+        timeVariance={300}
+        colors={[1, 2, 3, 1, 2, 3, 1, 4]}
+      />
+    </div>
   </div>
 </header>
