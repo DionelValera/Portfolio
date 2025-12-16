@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectList from "../components/ProjectList";
+---
+
+<Layout title="Proyectos | Dionel Valera">
+    <section class="pt-32 pb-20">
+        <h1
+            class="text-5xl md:text-6xl font-bold font-display text-white mb-12"
+        >
+            Proyectos
+        </h1>
+
+        <ProjectList client:load />
+    </section>
+</Layout>

@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0a0a;
+  --color-surface: #171717;
+  --color-surface-hover: #262626;
+  
+  --color-primary: #64748b; /* Slate-500 */
+  --color-primary-foreground: #ffffff;
+  
+  --color-accent: #10b981; /* Emerald-500 */
+  --color-accent-foreground: #ffffff;
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Onest', system-ui, sans-serif;
+
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+/* Custom Utilities */
+@utility glass {
+  background: rgba(23, 23, 23, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@utility text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #cbd5e1, #94a3b8);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-background);
+    color: #e2e8f0;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}

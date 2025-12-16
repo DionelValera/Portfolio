@@ -1,0 +1,74 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ContactForm from "../components/ContactForm";
+import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+---
+
+<Layout title="Contacto | Dionel Valera">
+    <section class="pt-32 pb-20 relative overflow-hidden">
+        {/* Decorative elements */}
+        <div
+            class="absolute top-1/4 left-10 w-64 h-64 bg-accent/20 rounded-full blur-[100px] pointer-events-none"
+        >
+        </div>
+        <div
+            class="absolute bottom-1/4 right-10 w-96 h-96 bg-primary/20 rounded-full blur-[120px] pointer-events-none"
+        >
+        </div>
+
+        <div
+            class="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start relative z-10"
+        >
+            <div>
+                <h1
+                    class="text-5xl md:text-6xl font-bold font-display text-white mb-6"
+                >
+                    Hablemos
+                </h1>
+                <p class="text-xl text-slate-400 mb-12 leading-relaxed">
+                    ¿Tienes una idea en mente o buscas colaborar en un proyecto?
+                    Estoy siempre abierto a nuevas oportunidades y desafíos
+                    técnicos.
+                </p>
+
+                <div class="space-y-8">
+                    <div class="flex items-start gap-5">
+                        <div
+                            class="p-4 rounded-xl bg-white/5 border border-white/10 text-accent"
+                        >
+                            <FaEnvelope size={24} />
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">
+                                Email
+                            </h3>
+                            <a
+                                href="mailto:dionelvalera@gmail.com"
+                                class="text-slate-400 hover:text-white transition-colors"
+                                >dionelvalera@gmail.com</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-5">
+                        <div
+                            class="p-4 rounded-xl bg-white/5 border border-white/10 text-primary"
+                        >
+                            <FaMapMarkerAlt size={24} />
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">
+                                Ubicación
+                            </h3>
+                            <p class="text-slate-400">
+                                Disponible para trabajo remoto mundialmente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ContactForm client:visible />
+        </div>
+    </section>
+</Layout>

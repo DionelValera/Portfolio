@@ -1,0 +1,55 @@
+---
+import "../styles/global.css";
+import "@fontsource/inter";
+import "@fontsource/onest";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { ClientRouter } from "astro:transitions";
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const {
+	title,
+	description = "Dionel Valera - Frontend Developer & Linux Enthusiast",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<ClientRouter />
+	</head>
+	<body
+		class="bg-background text-slate-300 antialiased selection:bg-accent selection:text-accent-foreground min-h-screen flex flex-col overflow-x-hidden"
+	>
+		>
+		<Header />
+		<main
+			class="flex-grow flex flex-col relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8"
+		>
+			<!-- Background Effects -->
+			<div class="fixed inset-0 z-[-1] pointer-events-none">
+				<div
+					class="absolute top-[10%] left-[20%] w-[400px] h-[400px] bg-primary/5 rounded-full blur-[120px] mix-blend-screen animate-float"
+				>
+				</div>
+				<div
+					class="absolute bottom-[20%] right-[10%] w-[300px] h-[300px] bg-accent/5 rounded-full blur-[100px] mix-blend-screen"
+					style="animation-delay: -3s"
+				>
+				</div>
+			</div>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>

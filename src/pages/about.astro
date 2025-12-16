@@ -1,0 +1,133 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ExperienceTimeline from "../components/ExperienceTimeline";
+import { FaTerminal, FaLaptopCode, FaUserAstronaut } from "react-icons/fa";
+
+const skills = {
+    Frontend: [
+        "React",
+        "Astro",
+        "Tailwind CSS",
+        "JavaScript/TypeScript",
+        "HTML5/CSS3",
+    ],
+    "Backend & DB": ["Node.js", "SQLite", "Firebase", "SQL"],
+    "Tools & OS": ["Git/GitHub", "Arch Linux", "Hyprland", "Bash", "VS Code"],
+};
+---
+
+<Layout title="Sobre Mí | Dionel Valera">
+    <section class="pt-32 pb-20 overflow-x-hidden">
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+            <div class="order-2 md:order-1">
+                <h1
+                    class="text-5xl md:text-6xl font-bold font-display text-white mb-8"
+                >
+                    Sobre Mí
+                </h1>
+                <p class="text-xl text-slate-400 mb-6 leading-relaxed">
+                    Soy un desarrollador apasionado por la intersección entre el
+                    diseño y la ingeniería. Mi viaje comenzó con la curiosidad
+                    por cómo funcionaban las interfaces, y evolucionó hacia una
+                    carrera técnica enfocada en la calidad y el detalle.
+                </p>
+                <p class="text-lg text-slate-400 mb-12 leading-relaxed">
+                    Como <strong class="text-white"
+                        >Técnico Superior en Informática</strong
+                    >, combino fundamentos sólidos con un aprendizaje continuo.
+                    Me especializo en crear aplicaciones web que no solo
+                    funcionan, sino que se sienten bien al usarlas. Mi entorno
+                    de trabajo preferido es <span class="text-accent"
+                        >Arch Linux</span
+                    >, donde personalizo cada aspecto de mi flujo de trabajo
+                    para maximizar la eficiencia.
+                </p>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center relative">
+                <div
+                    class="absolute inset-0 bg-accent/20 blur-[100px] rounded-full"
+                >
+                </div>
+                <img
+                    src="/assets/perfil/Generated Image September 18, 2025 - 3_31PM.png"
+                    alt="Dionel Valera"
+                    class="relative z-10 w-3/4 md:w-full max-w-md rounded-2xl shadow-2xl border border-white/10 rotate-3 hover:rotate-0 transition-transform duration-500"
+                />
+            </div>
+        </div>
+
+        <div class="mb-20">
+            <h2 class="text-3xl font-bold text-white mb-10 text-center">
+                Mi Trayectoria
+            </h2>
+            <ExperienceTimeline client:visible />
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 mt-16">
+            <div>
+                <h2
+                    class="text-2xl font-bold text-white mb-6 flex items-center gap-3"
+                >
+                    <FaLaptopCode className="text-accent" /> Habilidades Técnicas
+                </h2>
+                <div class="space-y-8">
+                    {
+                        Object.entries(skills).map(([category, items]) => (
+                            <div>
+                                <h3 class="text-lg font-semibold text-slate-200 mb-3">
+                                    {category}
+                                </h3>
+                                <div class="flex flex-wrap gap-2">
+                                    {items.map((skill) => (
+                                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-sm text-slate-300 hover:bg-white/10 transition-colors">
+                                            {skill}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+
+            <div class="relative">
+                <div
+                    class="absolute inset-0 bg-linear-to-tr from-accent/20 to-primary/20 blur-3xl rounded-full opacity-30"
+                >
+                </div>
+                <div
+                    class="relative bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm"
+                >
+                    <h2
+                        class="text-2xl font-bold text-white mb-6 flex items-center gap-3"
+                    >
+                        <FaUserAstronaut className="text-primary" /> Mi Filosofía
+                    </h2>
+                    <ul class="space-y-4 text-slate-400">
+                        <li class="flex gap-3">
+                            <span class="text-accent">▹</span>
+                            <span
+                                ><strong>Minimalismo:</strong> Menos es más. El código
+                                limpio es más fácil de mantener y escalar.</span
+                            >
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-accent">▹</span>
+                            <span
+                                ><strong>Performance:</strong> La velocidad es una
+                                característica, no un extra.</span
+                            >
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-accent">▹</span>
+                            <span
+                                ><strong>Personalización:</strong> Las herramientas
+                                deben adaptarse al usuario, no al revés.</span
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
