@@ -44,7 +44,7 @@ export default function ExperienceTimeline() {
                         contentArrowStyle={{ borderRight: '7px solid  rgba(255, 255, 255, 0.05)' }}
                         date={exp.date}
                         iconStyle={{ background: exp.type === 'work' ? '#10b981' : '#64748b', color: '#fff' }}
-                        icon={<exp.icon />}
+                        icon={<span className="text-2xl"><exp.icon /></span>}
                     >
                         <h3 className="vertical-timeline-element-title text-xl font-bold">{exp.title}</h3>
                         <h4 className="vertical-timeline-element-subtitle text-sm text-slate-400 mt-1">{exp.subtitle}</h4>
