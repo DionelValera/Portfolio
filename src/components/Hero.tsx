@@ -16,7 +16,7 @@ export default function Hero() {
 
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-display text-white mb-6 leading-tight">
                     Frontend <br />
-                    <span className="text-transparent bg-clip-text bg-linear-to-r from-slate-200 to-slate-500">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-slate-500">
                         Developer.
                     </span>
                 </h1>
