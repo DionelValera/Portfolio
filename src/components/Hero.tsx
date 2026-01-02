@@ -58,7 +58,7 @@ export default function Hero() {
             >
                 <div className="absolute inset-0 bg-accent/20 blur-[120px] rounded-full mix-blend-screen"></div>
                 {/* Using the provided asset 'noche.png' which seems suitable for a dark theme hero */}
-                <img src="/assets/avatar/derecha/noche.png" alt="Hero Avatar" className="relative z-10 w-full h-full object-contain opacity-80" />
+                <img src="/assets/avatar/izquierda/noche.png" alt="Hero Avatar" className="relative z-10 w-full h-full object-contain opacity-80" />
             </motion.div>
 
             {/* Decorative abstract elements */}
